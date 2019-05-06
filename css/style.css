@@ -412,7 +412,7 @@ li + li {
   }
   .blur {
     left: -25px;
-    width: 129%;
+    min-width: 129%;
   }
 }
 
