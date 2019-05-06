@@ -114,9 +114,10 @@ SIDERBAR
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 25px 28px 0 21px;
+  padding: 25px 28px 50px 21px;
   width: 200px;
   background: linear-gradient(to bottom, #151b25, #1c212b);
+  overflow-y: auto;
 }
 
 .sidebar__top {
@@ -289,8 +290,8 @@ Main
   align-items: flex-start;
   margin-left: 277px;
   margin-bottom: 50px;
-
 }
+
 .block-main__info {
   margin-top: 80px;
   display: grid;
@@ -300,8 +301,18 @@ Main
   overflow-y: auto;
 }
 
-@media (max-width: 1140px){
-
+@media (max-width: 768px){
+  .block-main {
+    margin-left: 217px;
+  }
+  .block-main__info {
+    margin-top: 40px;
+    grid-template-columns: 170px; 
+  }
+  .block-main__links {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .block-main__img {
@@ -393,6 +404,33 @@ li + li {
   position: absolute;
   height: 38px;
 }
+
+@media (max-width: 1024px){
+  .main-list__group::before {
+    content: "";
+    max-width: 300px;
+  }
+  .blur {
+    left: -25px;
+    width: 129%;
+  }
+}
+
+@media (max-width: 768px){
+  .main-list{
+    margin-right: 35px;
+    width: 275px;
+  }
+  .main-list__group::before {
+    content: "";
+    max-width: 200px;
+  }
+  .blur {
+    left: -25px;
+    width: 129%;
+  }
+}
+
 .main-list__group {
   display: flex;
   justify-content: space-between;
@@ -496,6 +534,12 @@ PLAYER FOOTER
   padding: 0 12px;
 }
 
+@media (max-width: 1024px){
+  .block-controls__icons {
+    padding: 0 4px;
+  }
+}
+
 .pause {
   border: 1px solid #fff;
   border-radius: 32px;
@@ -518,6 +562,17 @@ PLAYER FOOTER
 
 .block-controls__long {
   min-width: 449px;
+}
+
+@media (max-width: 1024px){
+  .block-controls__long {
+    min-width: 249px;
+  }
+}
+@media (max-width: 768px){
+  .block-controls__long {
+    min-width: 119px;
+  }
 }
 
 progress[value] {
