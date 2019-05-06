@@ -301,6 +301,11 @@ Main
   overflow-y: auto;
 }
 
+@media (max-width: 1024px){
+  .block-main {
+    margin-left: 240px;
+  }
+
 @media (max-width: 768px){
   .block-main {
     margin-left: 217px;
