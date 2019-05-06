@@ -305,7 +305,7 @@ Main
   .block-main {
     margin-left: 240px;
   }
-
+}
 @media (max-width: 768px){
   .block-main {
     margin-left: 217px;
@@ -317,6 +317,14 @@ Main
   .block-main__links {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+  .block-main__item {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .block-main__heading {
+    font-size: 71px !important;
+    grid-column-end: 3 !important;
   }
 }
 
